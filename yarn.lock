@@ -205,6 +205,26 @@
     "@babel/runtime" "7.0.0"
     recompose "^0.29.0"
 
+"@material-ui/styles@^3.0.0-alpha.0":
+  version "3.0.0-alpha.0"
+  resolved "https://registry.yarnpkg.com/@material-ui/styles/-/styles-3.0.0-alpha.0.tgz#c192a9d9b447321cf7b71deebe59256f8705becb"
+  integrity sha512-IQttdaeEHAGQW+VPbzlqaPlbu0BrVVp9qpbtEsv4Fo/tiWKOOKEmU/OmIYuTwPzm3DrHkW7HjrLLO6QpdwpQeQ==
+  dependencies:
+    "@babel/runtime" "7.1.2"
+    "@material-ui/utils" "^3.0.0-alpha.0"
+    classnames "^2.2.5"
+    deepmerge "^2.0.1"
+    hoist-non-react-statics "^3.0.0"
+    jss "^9.3.3"
+    jss-camel-case "^6.0.0"
+    jss-default-unit "^8.0.2"
+    jss-global "^3.0.0"
+    jss-nested "^6.0.1"
+    jss-props-sort "^6.0.0"
+    jss-vendor-prefixer "^7.0.0"
+    prop-types "^15.6.0"
+    warning "^4.0.1"
+
 "@material-ui/utils@^3.0.0-alpha.0":
   version "3.0.0-alpha.0"
   resolved "https://registry.yarnpkg.com/@material-ui/utils/-/utils-3.0.0-alpha.0.tgz#506fcaf531a9a8f58a73ff2d3dfaa36c0f238506"

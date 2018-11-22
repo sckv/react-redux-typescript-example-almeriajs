@@ -1,13 +1,12 @@
 import * as React from 'react';
 import {hot} from 'react-hot-loader';
 import {Provider} from 'react-redux';
-import {Store} from 'redux';
 
 import {createMuiTheme, MuiThemeProvider} from '@material-ui/core/styles';
-import {Link, Router} from '@reach/router';
-import {store, AppStoreState} from '@src/store';
+import {ConnectedHome} from '@src/app/Home';
+import {store} from '@src/store';
 
-import {InjectGlobal} from './styled';
+import {AppWrapper, InjectGlobal} from './styled';
 
 const theme = createMuiTheme({
   typography: {
@@ -20,9 +19,11 @@ class App extends React.Component {
     return (
       <>
         <MuiThemeProvider theme={theme}>
-          {/* <Provider store={store}> */}
-          <Router>asdasdasd</Router>
-          {/* </Provider> */}
+          <Provider store={store}>
+            <AppWrapper>
+              <ConnectedHome />
+            </AppWrapper>
+          </Provider>
         </MuiThemeProvider>
         <InjectGlobal />
       </>

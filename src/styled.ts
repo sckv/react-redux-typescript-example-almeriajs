@@ -1,4 +1,4 @@
-import {createGlobalStyle} from 'styled-components';
+import styled, {createGlobalStyle} from 'styled-components';
 import styledNormalize from 'styled-normalize';
 
 export const InjectGlobal = createGlobalStyle`
@@ -13,4 +13,12 @@ export const InjectGlobal = createGlobalStyle`
   body {
     background-color: #efefef;
   }
+`;
+
+export const AppWrapper = styled.div`
+  display: block;
+  width: 50%;
+  margin: auto;
+  padding-top: 10%;
+  align-items: center;
 `;
