@@ -8,7 +8,9 @@ import TextField from '@material-ui/core/TextField';
 import {AddTodoAction, AddTodoPayload} from '@src/store/actions';
 
 type StateKeys = 'title' | 'description';
+
 type State = Readonly<{[K in StateKeys]: string}>;
+
 const initialState: State = {title: '', description: ''};
 
 type DProps = {
@@ -32,7 +34,12 @@ export class AddTodo extends React.Component<DProps, State> {
     const {title, description} = this.state;
     return (
       <React.Fragment>
-        <Card style={{width: '100%', minHeight: 200, marginBottom: 20}}>
+        <Card
+          style={{
+            width: '100%',
+            minHeight: 200,
+            marginBottom: 20,
+          }}>
           <CardContent>
             <TextField
               label="Título"
